@@ -1,0 +1,41 @@
+section:nth-child(2n) {
+  background-color: rgb(215, 219, 255);
+}
+
+section:nth-child(2n+1) {
+  background-color: rgb(253, 195, 241);
+}
+
+/* Flexbox */
+main {
+  display: flex;
+  gap: 16px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch; 
+}
+
+section{
+  padding: 20px;
+  border: 0.5px solid black;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px
+}
+
+#datosgenerales{
+  flex-basis: 100%;
+}
+
+#habilidadespersonales, #conocimientos{
+  flex-basis: 47.30%;
+}
+
+#trabajosanteriores, #habilidadesprogramacion, #proyectosanteriores{
+  flex-basis: 30.30%;
+}
+
+#idiomas, #medioscontacto{
+  flex-basis: 47.30%;
+}
