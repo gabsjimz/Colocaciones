@@ -7,5 +7,51 @@ main section:nth-child(2n+1) {
 }
 
 /* Grid: AREAS */
+main{
+  display: grid;
+  gap: 0.5rem;
+  grid-template-areas: "a" 
+                       "b c"
+                       "d e f g"
+                       "h"
+}
 
+section{
+  padding: 20px;
+  border: 0.5px solid black;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px
+}
 
+#datosgenerales{
+  grid-column: 1 / 5;
+}
+
+#habilidadespersonales{
+  grid-column: 1 / 3;
+}
+
+#conocimientos{
+  grid-column:  3 / 5;
+}
+
+#trabajosanteriores{
+  grid-column: 1 / 2;
+}
+
+#habilidadesprogramacion{
+  grid-column: 2 / 3;
+}
+
+#proyectosanteriores{
+  grid-column: 3 / 5;
+}
+
+#idiomas{
+  grid-column: 1 / 3;
+}
+
+#medioscontacto{
+  grid-column: 3 / 5;
+}
